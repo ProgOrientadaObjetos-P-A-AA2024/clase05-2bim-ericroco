@@ -33,5 +33,18 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
     }
     
     
+    @Override
+    public void establecerPromedioEnsayo() {
+
+        promedioEnsayo = obtenerTotalProblemas() / obtenerNumeroProblemas();
+
+    }
+
+    @Override
+    public double obtenerPromedioEnsayo() {
+        return promedioEnsayo;
+
+    }
+    // porque es necesario darle logica a los metodos de la interfaz
     
 }
