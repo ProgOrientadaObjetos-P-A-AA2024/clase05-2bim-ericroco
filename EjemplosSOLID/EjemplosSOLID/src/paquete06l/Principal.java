@@ -19,8 +19,11 @@ public class Principal {
 
         MenorEdad menor = new MenorEdad("Felipe", representante);
 
-        System.out.printf("Nombre:%s - Tarjeta:\nBanco: %s\nNombre Tarjeta:%s\nNumero:%s\n",
-                menor.obtenerNombre(),menor.obtenerRepresentante().obtenerTarjeta().obtenerBanco().obtenerNombre(),
+        System.out.printf("Nombre:%s - Tarjeta:\nBanco: %s\n"
+                + "Nombre Tarjeta:%s\nNumero:%s\n",
+                menor.obtenerNombre(),
+                menor.obtenerRepresentante().obtenerTarjeta()
+                        .obtenerBanco().obtenerNombre(),
                 menor.obtenerRepresentante().obtenerTarjeta().obtenerNombre(),
                 menor.obtenerRepresentante().obtenerTarjeta().obtenerNumero());
 
